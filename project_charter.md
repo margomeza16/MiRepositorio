@@ -53,8 +53,10 @@ Tiempo promedio de generación de diagnóstico actual = 2 diagnósticos por hora
 Costo promedio de generación de diagnóstico actual = 20% del salario del gastroenterologo endoscopista.
 
 * How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
-* 
-Medida de la metrica del tiempo = tiempo promedio de generación de diagnóstico actual / tiempo en segundos de generación de un diagnóstico por parte de la solución
+ 
+Medida de la metrica del tiempo = tiempo promedio de generación de diagnóstico actual / tiempo en segundos de generación de un diagnóstico por parte de la solución.
+
+Medida de la metrica de costo = costo actual - (costo actual * 20%)
 
 
 ## Plan
