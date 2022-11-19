@@ -29,10 +29,21 @@ Se pretende construir una solución de deep learning, aplicando las técnicas de
 	
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
+Mejorar el nivel de satisfacción de pacientes del área de gastroenterología en el proceso de diagnóstico de enfermedades gastrointestinales.
+Contribuir en el diagnóstico temprano para el tratamiento oportuno de posibles enfermmedades gastrointestinales.
 * What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
-* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
+Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva que tarda en promedio 180 segundos (30 minutos).
+Reducir el porcentaje de costo en la generación del diagnístico de una endoscopía digestiva, que corresponde aproximadamente al 20% del salario del gastroenterologo endoscopista.
+* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%)
+Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva pasando de 180 segundos a 5 segundos. 
+Reducir en 20% el costo en la generación del diagnístico de una endoscopía digestiva.
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
+Tiempo promedio de generación de diagnóstico actual = 2 diagnósticos por hora = 30 minutos (180 segundos) por diagnóstico.
+Costo promedio de generación de diagnóstico actual = 20% del salario del gastroenterologo endoscopista.
 * How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
+Medida de la metrica del tiempo = tiempo promedio de generación de diagnóstico actual
+                                  _______________________________________________________________________________
+                                  tiempo en segundos de generación de un diagnóstico por parte de la solución / 180   
 
 ## Plan
 * Phases (milestones), timeline, short description of what we'll do in each phase.
