@@ -30,7 +30,7 @@ Description of the database.
 
 A continuación se describe el conjunto de imagenes de entrenamiento:
 
-El archivo contiene 3200 imganes, distribuidas en las siguientes 4 carpetas, que corresponden a las 4 clases de diagnósticos:
+El archivo contiene 3200 imágenes, distribuidas en las siguientes 4 carpetas, que corresponden a las 4 clases de diagnósticos:
 
 /0_normal/: Contiene 800 imágenes con diagnostico normal (Sin
 enfermadad).
@@ -50,7 +50,7 @@ Description of the database.
 
 A continuación se describe el conjunto de imagenes de test:
 
-El archivo contiene 800 imganes, distribuidas en las siguientes 4 carpetas, que corresponden a las 4 clases de diagnósticos:
+El archivo contiene 800 imágenes, distribuidas en las siguientes 4 carpetas, que corresponden a las 4 clases de diagnósticos:
 
 /0_normal/: Contiene 200 imágenes con diagnostico normal (Sin
 enfermadad).
