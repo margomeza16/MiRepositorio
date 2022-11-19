@@ -69,6 +69,7 @@ Medida de la metrica de costo = costo actual - (costo actual * 20%)
 
 ## Plan
 * Phases (milestones), timeline, short description of what we'll do in each phase.
+Cambios propuestos por Alejandro.
 
 ## Architecture
 * Data
