@@ -85,7 +85,7 @@ Cambios propuestos por Alejandro.
   * AzureML for modeling and web service operationalization
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
   * How will the customer use the model results to make decisions
-  * 
+  
   Los resultados del modelo serán utilizados para generar el diagnóstico de una patología gastrointestinal mediante la clasificación de imagenes de endoscopias digestivas.
   
   * Data movement pipeline in production
