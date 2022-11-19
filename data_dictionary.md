@@ -15,11 +15,13 @@ enfermadad).
 
 Los imagenes se encuentran en formato .JPG, que según la fuente original ((https://dl.acm.org/doi/pdf/10.1145/3083187.3083212), tienen diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles y organizadas en carpetas nombradas de acuerdo con la patologia indicada antes.  A su vez, se encuentran agrupadas en tres archivos .zip a saber:
 
-Un archivo .zip con las imágenes de entrenamiento.
+train.zip. Archivo .zip con las imágenes de entrenamiento.
 
-Un Archivo .zip con las imágenes de test.
+test.zip. Archivo .zip con las imágenes de test.
 
-Un archivo .zip con las imágenes de validación.
+val.zip. Archivo .zip con las imágenes de validación.
+
+# A continuación se describe el contenido de cada uno de estos archivos:
 
 
 # train.zip : Archivo zip con imágenes de entrenamiento.
