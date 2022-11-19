@@ -22,7 +22,7 @@ Un Archivo .zip con las imágenes de test.
 Un archivo .zip con las imágenes de validación.
 
 
-# Archivo zip con imágenes de entrenamiento
+# train.zip : Archivo zip con imágenes de entrenamiento.
 
 Description of the database.
 
@@ -42,7 +42,7 @@ enfermadad).
 
 
 
-# Archivo zip con imágenes de test
+# test.zip : Archivo zip con imágenes de test.
 
 Description of the database.
 
@@ -60,7 +60,7 @@ enfermadad).
 /3_esophagitis/: Contiene 200 imágenes con diagnóstio de esofagitis.
 
 
-# Archivo zip con imágenes de validación
+# val.zip : Archivo zip con imágenes de validación.
 
 Description of the database.
 
