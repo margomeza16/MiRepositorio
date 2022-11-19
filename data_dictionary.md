@@ -3,6 +3,7 @@
 In this document you must describe the tables, collections or files that you are using in the project. You can describe each databased provide UML diagrams for a better design description.
 
 EL conjunto de datos esta integrado por imagenes endoscopicas con diagnósticos de enfermedades gastrointestinales o del colon, que de acuerdo a la fuente original (https://dl.acm.org/doi/pdf/10.1145/3083187.3083212), corresponden a imágenes reales, verificadas y etiquetadas por médicos especialistas en endoscopias. La clasificación de las imágenes corresponde a la patalogía médica encontrada, a saber:
+
 /0_normal/: Corresponde a las imágenes con diagnostico normal (Sin
 enfermadad).
 
