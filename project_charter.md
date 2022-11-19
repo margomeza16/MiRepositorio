@@ -2,7 +2,9 @@
 
 ## Business background
 
-* Who is the client, what business domain the client is in.
+* Who is the client, what business domain the client is in. 
+
+Este proyecto esta  dirigido al sector salud. El cliente 
 * What business problems are we trying to address?
 
 ## Scope
