@@ -4,11 +4,14 @@
 
 * Who is the client, what business domain the client is in. 
 
-Este proyecto esta  dirigido al sector salud. El cliente 
+Este proyecto esta  dirigido al sector salud, con el objetivo de apoyar el diagnóstico automatizado de enfermedades digestivas y del colon a partir de imágenes endoscópicas gastrointestinales. El cliente son las áreas de gastroenterología de las clinicas y hospitales del sector salud y el usuario directo es el médico especialista en gastroentrologia.
 * What business problems are we trying to address?
+
+El problema de negocio a abordar en este proyecto es el diagnóstico automatizado de enfermedades digestivas y del colon a partir de imágenes endoscópicas gastrointestinales. Esto con el propósito de apoyar el diagnóstico temprano y tratamiento oportuno de posibles enfermedades del sistema digestivo, incluido el cancer colorectal, reduciendo costos y tiempos de diagnóstico y tratamientos.
 
 ## Scope
 * What data science solutions are we trying to build?
+Se pretende construir una solución de deep learning, aplicando las técnicas de transfer learning y fine tuning, partiendo de un modelo base de redes convolucionales pre-entrenadas. Para posteriormente evaluarlos y compararlos mediante metricas de desempeño, como las medidas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
 * What will we do?
 * How is it going to be consumed by the customer?
 
