@@ -20,12 +20,20 @@ Se pretende construir una solución de deep learning, aplicando las técnicas de
 * Who are on this project:
 	* Microsoft:
 		* Project lead
+		
+		
 		* PM
+		
 		* Data scientist(s)
+		
+		
 		* Account manager
 	* Client:
+		Clinicas y hospitales con servicios de endoscopía.
 		* Data administrator
+		Área de imagenes diagnósticas
 		* Business contact
+		Gastroenterologo endoscopista
 	
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
