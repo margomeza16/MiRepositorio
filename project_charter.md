@@ -21,7 +21,7 @@ Se pretende construir una solución de deep learning, aplicando las técnicas de
 
 Se partirá de la descarga del conjunto de imágenes de endoscopias gastrointestinales, etiquetadas según su diagnóstico y clasificadas en conjuntos de entrenamiento, test y validación.
 
-Como pre-procesamiento, para ampliar la cantidad y variedad de imagenes de entrenamiento, se aplicara data augmentation al conjunto de imagenes de entrenamiento para obtener nuevas imágenes transformadas (cambios en traslación, rotación, intensidad, entre otros). Adicionalmente se aplicara el pre-procesamiento de la red convolucional ResNet50V2 para transformar los conjuntos de entrenamiento, test y validación. La ResNet50V2 se utilizará como modelo base para la extracción de características generales de las imágenes. Sobre este modelo se adicionaran las siguientes capas para la clasificación:
+Como pre-procesamiento, para ampliar la cantidad y variedad de imagenes de entrenamiento, se aplicara data augmentation al conjunto de imagenes de entrenamiento para obtener nuevas imágenes transformadas (cambios en traslación, rotación, intensidad, entre otros). Adicionalmente se aplicara el pre-procesamiento de la red convolucional ResNet50V2 para escalar entre -1 y 1 los pixeles de las imágenes de entrada de los conjuntos de entrenamiento, test y validación. La ResNet50V2 se utilizará como modelo base para la extracción de características generales de las imágenes. Sobre este modelo se adicionaran las siguientes capas para la clasificación:
 
 #Capa de global average pooling
 
