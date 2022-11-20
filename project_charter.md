@@ -10,7 +10,7 @@ Este proyecto esta  dirigido al sector salud, con el objetivo de apoyar en el di
 
 El problema de negocio a abordar en este proyecto es el diagnóstico automatizado de posibles enfermedades en el tracto gastrointestinal, a partir de imágenes endoscópicas gastrointestinales reales, evaluadas y etiquetadas por especialistas en endoscopias gatrointestinales. Esto con el propósito de apoyar el diagnóstico temprano y tratamiento oportuno de posibles enfermedades del sistema digestivo, incluido el cancer de esofago, de estomago y colorectal, reduciendo costos y tiempos de diagnóstico y tratamiento.
 
-La fuente de inspiración y sustentación  a nivel médico y cientifico del proyecto y de los datos utilizados para la construcción del modelo, se encuentran en el paper: "Kvasir: A Multi-Class Image Dataset for Computer AidedGastrointestinal Disease Detection" cuyo enlace de acceso es: https://dl.acm.org/doi/pdf/10.1145/3083187.3083212
+La fuente de inspiración y sustentación  a nivel médico y cientifico del proyecto y de los datos utilizados para la construcción del modelo, se encuentran en el paper: "Kvasir: A Multi-Class Image Dataset for Computer AidedGastrointestinal Disease Detection", cuyo enlace de acceso es: https://dl.acm.org/doi/pdf/10.1145/3083187.3083212. 
 A esta fuente llegamos desde el sitio de Kaggle, https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download, de donde descargamos los datos.
 
 ## Scope
