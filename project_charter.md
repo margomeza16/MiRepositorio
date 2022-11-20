@@ -83,15 +83,15 @@ Los modelos será evaluados mediante las metricas de accuracy, recall, precision
 		* Account manager
 	* Client:
 		Clinicas y hospitales con servicios de endoscopía.
-		* Data administrator
+	* Data administrator
 		Área de imagenes diagnósticas
-		* Business contact
+	* Business contact
 		Gastroenterologo endoscopista
 	
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
 
-Mejorar el nivel de satisfacción de pacientes del área de gastroenterología en el proceso de diagnóstico de enfermedades gastrointestinales.
+Mejorar la calidad de atención y el nivel de satisfacción de pacientes del área de gastroenterología en el proceso de diagnóstico de enfermedades gastrointestinales.
 
 Contribuir en el diagnóstico temprano para el tratamiento oportuno de posibles enfermmedades gastrointestinales.
 
@@ -103,7 +103,7 @@ Reducir el porcentaje de costo en la generación del diagnístico de una endosco
 
 * Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%)
 
-Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva pasando de 180 segundos a 5 segundos. 
+Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva pasando de 180 segundos a 10 segundos. 
 
 Reducir en 20% el costo en la generación del diagnístico de una endoscopía digestiva.
 
@@ -139,8 +139,14 @@ Cambios propuestos por Alejandro.
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
   * How will the customer use the model results to make decisions
   
-  Los resultados del modelo serán utilizados para generar el diagnóstico de una patología gastrointestinal mediante la clasificación de imagenes de endoscopias digestivas.
+  El modelo será utilizado para generar de forma rápida el diagnóstico automatizado de una patología gastrointestinal mediante la clasificación que realice de una imágen de endoscopía digestiva. Este diagnóstico será utilizado para  ofrecer tratamientos oportunos y acordes al diagnóstico generado, contribuyando a una atención  más rápida a los pacientes que presenten alguna de estas patologías y disminuyendo costos en su atención.
   
+    
+  Trasladamos textualmente del paper fuente (https://dl.acm.org/doi/epdf/10.1145/3083187.3083212), los siguientes aportes de un modelo como el que estamos proponiendo:
+  
+  "Automatic detection, recognition and assessment of pathological findings will probably contribute to reduce inequalities, improvequality and optimize use of scarce medical resources. Furthermore,since endoscopic examinations are real-time investigations, bothnormal and abnormal findings have to be recorded and documentedwithin written reports. Automatic report generation would proba-bly contribute to reduce doctors’ time required for paperwork andthereby increase time to patient care. Reliable and careful docu-mentation with the use of minimal standard terminology (MST) [1] may also contribute to improved patient follow-up and treatment".
+  
+ 
   * Data movement pipeline in production
   * Make a 1 slide diagram showing the end to end data flow and decision architecture
     * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
