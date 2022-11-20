@@ -128,7 +128,7 @@ Cambios propuestos por Alejandro.
 * Data
   * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)
 
-Los datos de entrada al modelo corresponden a imágenes de endoscopías gastrointestinales, etiquetadas según el hallazago diagnósticado por el especialista en gastroenterología endoscópica y a su vez clasificadas en carpetas de entrenamiento, test y validación. El archivo zip con estas imágenes se descargo de la página de Kaggle, en la siguiente ruta: https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download.
+Los datos de entrada al modelo corresponden a imágenes de endoscopías gastrointestinales, etiquetadas según el diagnóstico del especialista en gastroenterología endoscópica y a su vez clasificadas en carpetas de entrenamiento, test y validación. El archivo zip con estas imágenes se descargo de la página de Kaggle, en la siguiente ruta: https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download.
 
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
   * all the data, 
