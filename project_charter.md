@@ -19,7 +19,7 @@ A esta fuente llegamos desde el sitio de Kaggle, https://www.kaggle.com/datasets
 Se pretende construir una solución de deep learning, aplicando las técnicas de transfer learning y fine tuning, partiendo de un modelo base de redes convolucionales pre-entrenadas. Para posteriormente evaluarlos y compararlos mediante metricas de desempeño, como las medidas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
 * What will we do?
 
-Se partirá del conjunto de imágenes de endoscopias gastrointestinales, etiquetadas´según su diagnóstico y clasificadas en conjuntos de entrenamiento, test y validación.
+Se partirá del conjunto de imágenes de endoscopias gastrointestinales, etiquetadas según su diagnóstico y clasificadas en conjuntos de entrenamiento, test y validación.
 
 Como pre-procesamiento, para ampliar la cantidad y variedad de imagenes de entrenamiento, se aplicara data augmentation al conjunto de imagenes de entrenamiento para obtener nuevas imágenes transformadas (cambios en traslación, rotación, intensidad, entre otros). Adicionalmente se aplicara el pre-procesamiento de la red convolucional ResNet50V2 para transformar los conjuntos de entrenamiento, test y validación. La ResNet50V2 se utilizará como modelo base para la extracción de características generales de las imágenes. Sobre este modelo se adicionaran las siguientes capas para la clasificación:
 
