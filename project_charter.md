@@ -8,7 +8,7 @@ Este proyecto esta  dirigido al sector salud, con el objetivo de apoyar en el di
 
 * What business problems are we trying to address?
 
-El problema de negocio a abordar en este proyecto es el diagnóstico automatizado de posibles enfermedades en el tracto gastrointestinal, a partir de imágenes endoscópicas gastrointestinales reales, evaluadas y etiquetadas por especialistas en endoscopias gatrointestinales. Esto con el propósito de apoyar el diagnóstico temprano y tratamiento oportuno de posibles enfermedades del sistema digestivo, incluido el cancer de esofago, de estomago y colorectal, reduciendo costos y tiempos de diagnóstico y tratamiento.
+El problema de negocio a abordar en este proyecto es el diagnóstico automatizado de posibles enfermedades en el tracto gastrointestinal, a partir de imágenes endoscópicas gastrointestinales reales, evaluadas y etiquetadas por especialistas en endoscopias gatrointestinales. Esto con el propósito de apoyar el diagnóstico temprano y tratamiento oportuno de posibles enfermedades del sistema digestivo, incluido el cancer de esofago, de estomago y colorrectal, reduciendo costos y tiempos de diagnóstico y tratamiento.
 
 La fuente de inspiración y sustentación  a nivel médico y cientifico del proyecto y de los datos utilizados para la construcción del modelo, se encuentran en el paper: "Kvasir: A Multi-Class Image Dataset for Computer AidedGastrointestinal Disease Detection", cuyo enlace de acceso es: https://dl.acm.org/doi/pdf/10.1145/3083187.3083212. 
 A esta fuente llegamos desde el sitio de Kaggle, https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download, de donde descargamos los datos.
@@ -18,6 +18,35 @@ A esta fuente llegamos desde el sitio de Kaggle, https://www.kaggle.com/datasets
 
 Se pretende construir una solución de deep learning, aplicando las técnicas de transfer learning y fine tuning, partiendo de un modelo base de redes convolucionales pre-entrenadas. Para posteriormente evaluarlos y compararlos mediante metricas de desempeño, como las medidas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
 * What will we do?
+
+Se partirá del conjunto de imágenes de endoscopias gastrointestinales, etiquetadas´según su diagnóstico y clasificadas en conjuntos de entrenamiento, test y validación.
+
+Como pre-procesamiento, para ampliar la cantidad y variedad de imagenes de entrenamiento, se aplicara data augmentation al conjunto de imagenes de entrenamiento para obtener nuevas imágenes transformadas (cambios en traslación, rotación, intensidad, entre otros). Adicionalmente se aplicara el pre-procesamiento de la red convolucional ResNet50V2 para transformar los conjuntos de entrenamiento, test y validación. La ResNet50V2 se utilizará como modelo base para la extracción de características generales de las imágenes. Sobre este modelo se adicionaran las siguientes capas para la clasificación:
+
+#Capa de global average pooling
+pool = tf.keras.layers.GlobalAveragePooling2D()(extractor.output)
+#capa densa con 32 neuronas y activación relu
+dense1 = tf.keras.layers.Dense(32, activation="relu")(pool)
+#Capa de dropout con taza de 0.2 para regularización
+drop1 = tf.keras.layers.Dropout(0.2)(dense1)
+#Capa densa de salida con 4 clases con activación softmax
+dense2 = tf.keras.layers.Dense(4, activation="softmax")(drop1)
+
+Se construirá un modelo de Transfer Learning y uno de Fine Tunning.
+
+Se realizará entrenamiento de los modelos utilizando los siguientes parámetros:
+
+Como función de perdida se utilizará "categorical_crossentropy". 
+Optimizador Adam con lr=1e-3 para el modelo de Transfer Learning y lr=1e-4 para Fine Tunning.
+metrics="accuracy"
+batch_size = 32
+epochs = 20
+
+Se implementará la predicción de los modelos, mediante la cual se realizará la clasificación de diagnóstico de las nuevas imagenes de endoscopias gastrointestinales.
+
+
+Los modelos será evaluados mediante las metricas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
+
 * How is it going to be consumed by the customer?
 
 ## Personnel
