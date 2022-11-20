@@ -24,12 +24,19 @@ Se partirá del conjunto de imágenes de endoscopias gastrointestinales, etiquet
 Como pre-procesamiento, para ampliar la cantidad y variedad de imagenes de entrenamiento, se aplicara data augmentation al conjunto de imagenes de entrenamiento para obtener nuevas imágenes transformadas (cambios en traslación, rotación, intensidad, entre otros). Adicionalmente se aplicara el pre-procesamiento de la red convolucional ResNet50V2 para transformar los conjuntos de entrenamiento, test y validación. La ResNet50V2 se utilizará como modelo base para la extracción de características generales de las imágenes. Sobre este modelo se adicionaran las siguientes capas para la clasificación:
 
 #Capa de global average pooling
+
 pool = tf.keras.layers.GlobalAveragePooling2D()(extractor.output)
+
 #capa densa con 32 neuronas y activación relu
+
 dense1 = tf.keras.layers.Dense(32, activation="relu")(pool)
+
 #Capa de dropout con taza de 0.2 para regularización
+
 drop1 = tf.keras.layers.Dropout(0.2)(dense1)
+
 #Capa densa de salida con 4 clases con activación softmax
+
 dense2 = tf.keras.layers.Dense(4, activation="softmax")(drop1)
 
 Se construirá un modelo de Transfer Learning y uno de Fine Tunning.
@@ -37,9 +44,13 @@ Se construirá un modelo de Transfer Learning y uno de Fine Tunning.
 Se realizará entrenamiento de los modelos utilizando los siguientes parámetros:
 
 Como función de perdida se utilizará "categorical_crossentropy". 
+
 Optimizador Adam con lr=1e-3 para el modelo de Transfer Learning y lr=1e-4 para Fine Tunning.
+
 metrics="accuracy"
+
 batch_size = 32
+
 epochs = 20
 
 Se implementará la predicción de los modelos, mediante la cual se realizará la clasificación de diagnóstico de las nuevas imagenes de endoscopias gastrointestinales.
