@@ -139,6 +139,21 @@ Los datos de entrada al modelo corresponden a imágenes de endoscopías gastroin
   * ASA for stream aggregation
   * HDI/Hive/R/Python for feature construction, aggregation and sampling
   * AzureML for modeling and web service operationalization
+  * 
+  Las herramientas utilizadas en la solución son las siguientes:
+  
+  Python. Como lenguaje de programación.
+  
+  Tensorflow. Como plataforma para la implementación de nuestra solución de machine learning.
+  
+  Keras. Paquete de Tensorflow para el pre-procesamiento de las imágenes, transformaciones con data augmentation, construcción y entrenamiento del modelo de deep learning.
+  
+  sklearn. Para evaluar el modelo con las metricas de accuracy, precision, recall y f1-score.
+  
+  numpy. Biblioteca utilizada para construir los arreglos de los conjuntos de imágenes para entrenamiento, test y validación.
+  
+   matplotlib. Biblioteca utilizada para la visualización de las imágenes y construcción de gráficos para visualizar el desempeño del modelo en términos de predicción, y las funciones de pérdida y accuracy.
+  
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
   * How will the customer use the model results to make decisions
   
