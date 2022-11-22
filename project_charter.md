@@ -78,6 +78,8 @@ Se implementará la predicción de los modelos, mediante la cual se realizará l
 
 Los modelos será evaluados mediante las metricas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
 
+El modelo será desplegado mediante la herramienta mlflow.
+
 * How is it going to be consumed by the customer?
 
 ## Personnel
@@ -98,7 +100,9 @@ Los modelos será evaluados mediante las metricas de accuracy, recall, precision
 		Área de imagenes diagnósticas
 	* Business contact: 
 		Gastroenterologo endoscopista
+		
 		Juan Sebastian Lara
+		
 		Juan Sebastian Malagon
 	
 ## Metrics
