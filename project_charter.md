@@ -123,6 +123,7 @@ Medida de la metrica de costo = costo actual - (costo actual * 20%)
 ## Plan
 * Phases (milestones), timeline, short description of what we'll do in each phase.
 
+"![Cronograma](https://user-images.githubusercontent.com/73256719/203341700-2c8a8462-23cb-413a-b367-f0c8bb1ba8b0.png)"
 
 ## Architecture
 * Data
