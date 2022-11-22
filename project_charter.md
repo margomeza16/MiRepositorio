@@ -227,11 +227,17 @@ Estos tres archivos .zip se subieron a Google Drive para ser descargados en Goog
 ## Communication
 * How will we keep in touch? Weekly meetings?
 
-Se propone la realización de seguimiento diario durante las etapas de entendimiento del negocio, conocimiento de los  y extracción de características. Durante las etapas de construcción del modelo, evaluación y despliegue, se proponen reuniones semanales.
+Se propone la realización de seguimiento diario durante las etapas de entendimiento del negocio, conocimiento de los datos y extracción de características. Durante las etapas de construcción del modelo, evaluación y despliegue, se proponen reuniones semanales.
 
 * Who are the contact persons on both sides?
 
 Equipo del proyecto:
+
+Alejandro Sandoval Quintero
+
+Diego Alejandro Orjuela
+
+Marco Julio Gómez Amado
 
 Cliente:
 
