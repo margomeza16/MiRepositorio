@@ -10,6 +10,17 @@ Este proyecto esta  dirigido al sector salud, con el objetivo de apoyar en el di
 
 El problema de negocio a abordar en este proyecto es el diagnóstico automatizado de posibles enfermedades en el tracto gastrointestinal, a partir de imágenes endoscópicas gastrointestinales reales, evaluadas y etiquetadas por especialistas en endoscopias gatrointestinales. Esto con el propósito de apoyar el diagnóstico temprano y tratamiento oportuno de posibles enfermedades del sistema digestivo, incluido el cancer de esofago, de estomago y colorrectal, reduciendo costos y tiempos de diagnóstico y tratamiento.
 
+Se consideran las siguientes 4 clases de diagnóstico:
+
+/0_normal/: Corresponde a diagnostico normal (Sin
+enfermadad).
+
+/1_ulcerative_colitis/: Corresponde a diagnóstico de colitis ulcerosa.
+
+/2_polyps/: Corresponde a diagnóstico de pólipos.
+
+/3_esophagitis/: Corresponde a diagnóstio de esofagitis.
+
 La fuente de inspiración y sustentación  a nivel médico y cientifico del proyecto y de los datos utilizados para la construcción del modelo, se encuentran en el paper: "Kvasir: A Multi-Class Image Dataset for Computer AidedGastrointestinal Disease Detection", cuyo enlace de acceso es: https://dl.acm.org/doi/pdf/10.1145/3083187.3083212. 
 A esta fuente llegamos desde el sitio de Kaggle, https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download, de donde descargamos los datos.
 
@@ -135,6 +146,37 @@ Los datos de entrada al modelo corresponden a imágenes de endoscopías gastroin
   * all the data, 
   * after some pre-aggregation on-prem,
   * Sampled data enough for modeling 
+
+El archivo zip con las imágenes se descargan de la página de Kaggle (https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download), ingresando con usuario registrado y dando click al boton "Download".
+
+El archivo zip descargado contiene tres carpetas a saber:
+
+train. Contiene las imágenes de entrenamiento.
+
+test. Contiene las imágenes de test.
+
+val. Cotiene las imágenes de validación.
+
+Cada una de estas carpetas a su vez, contienen las siguientes subcarpetas:
+
+/0_normal/: Contiene las imágenes con diagnostico normal (Sin
+enfermadad).
+
+/1_ulcerative_colitis/: Contiene las imágenes con diagnóstico de colitis ulcerosa.
+
+/2_polyps/: Contiene las imágenes con diagnóstico de pólipos.
+
+/3_esophagitis/: Contiene las imágenes con diagnóstio de esofagitis.
+
+Teniendo en cuenta lo anterior y para posibilitar su cargue en GoogleColab, se dividio el archivo .zip en tres archivos .zip, a saber:
+
+train.zip. Contiene las imágenes de entrenamiento separadas en las tres subcarpetas de diagnóstico, indicadas antes.
+
+test.zip. Contiene las imágenes de test separadas en las tres subcarpetas de diagnóstico, indicadas antes.
+
+val.zip. Contiene las imágenes de validación separadas en las tres subcarpetas de diagnóstico, indicadas antes.
+
+Estos tres archivos .zip se subieron a Google Drive para ser descargados en GoogleColab.
 
 * What tools and data storage/analytics resources will be used in the solution e.g.,
   * ASA for stream aggregation
