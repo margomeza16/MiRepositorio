@@ -98,6 +98,8 @@ Los modelos será evaluados mediante las metricas de accuracy, recall, precision
 		Área de imagenes diagnósticas
 	* Business contact: 
 		Gastroenterologo endoscopista
+		Juan Sebastian Lara
+		Juan Sebastian Malagon
 	
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
@@ -198,6 +200,10 @@ Estos tres archivos .zip se subieron a Google Drive para ser descargados en Goog
    matplotlib. Librería utilizada para la visualización de las imágenes y construcción de gráficos para visualizar el desempeño del modelo en términos de predicción, y las funciones de pérdida y accuracy.
    
    mlflow. Herramienta para el versionado y despliegue del modelo.
+   
+   Para el entrenamiento del modelo en GoogleColab, se utilizó un entorno de ejecución con GPU.
+   
+   Para el almacenamiento de las imágenes se requiere un espacio de 2 GB.
   
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
   * How will the customer use the model results to make decisions
@@ -216,4 +222,16 @@ Estos tres archivos .zip se subieron a Google Drive para ser descargados en Goog
 
 ## Communication
 * How will we keep in touch? Weekly meetings?
+
+Se propone la realización de seguimiento diario durante las etapas de entendimiento del negocio, conocimiento de los  y extracción de características. Durante las etapas de construcción del modelo, evaluación y despliegue, se proponen reuniones semanales.
+
 * Who are the contact persons on both sides?
+
+Equipo del proyecto:
+
+Cliente:
+
+Juan Sebastian Lara.
+
+Juan Sebastian Malagon.
+
