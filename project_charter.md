@@ -151,9 +151,11 @@ Los datos de entrada al modelo corresponden a imágenes de endoscopías gastroin
   
   sklearn. Para evaluar el modelo con las metricas de accuracy, precision, recall y f1-score.
   
-  numpy. Biblioteca utilizada para construir los arreglos de los conjuntos de imágenes para entrenamiento, test y validación.
+  numpy. Libreria utilizada para construir los arreglos de los conjuntos de imágenes para entrenamiento, test y validación.
   
-   matplotlib. Biblioteca utilizada para la visualización de las imágenes y construcción de gráficos para visualizar el desempeño del modelo en términos de predicción, y las funciones de pérdida y accuracy.
+   matplotlib. Librería utilizada para la visualización de las imágenes y construcción de gráficos para visualizar el desempeño del modelo en términos de predicción, y las funciones de pérdida y accuracy.
+   
+   mlflow. Herramienta para el versionado y despliegue del modelo.
   
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
   * How will the customer use the model results to make decisions
