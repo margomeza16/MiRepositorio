@@ -197,7 +197,7 @@ test.zip : https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/vie
 
 val.zip: https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link
 
-De aquí se descargan y extraen las imágenes de los archivos .zip en GoogleColab en las siguientes rutas temporales:
+De aquí, con el comando linux unzip se descargan y extraen las imágenes de los archivos .zip en GoogleColab en las siguientes rutas temporales:
 
 train.zip: /tmp/train/
 
