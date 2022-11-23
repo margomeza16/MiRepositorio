@@ -12,7 +12,7 @@ _**For ease of modifying this report, placeholder links are included in this pag
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-|train |https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning | Brief description of its destination location | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](https://github.com/margomeza16/MiRepositorio/blob/main/data_dictionary.md)|
+|train |Los datos para train se descargan manualmente con la opción "Download" de la siguiente página de Kaggle, ingresando con usuario registrado https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning | Brief description of its destination location | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](https://github.com/margomeza16/MiRepositorio/blob/main/data_dictionary.md)|
 | test| https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning | Brief description of its destination location | [script2.R](link/to/R/script/file/in/Code) | [Dataset 2 Report](https://github.com/margomeza16/MiRepositorio/blob/main/data_dictionary.md)|
 | val| https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning | Brief description of its destination location | [script3.py](link/to/R/script/file/in/Code) | [Dataset 3 Report](https://github.com/margomeza16/MiRepositorio/blob/main/data_dictionary.md)|
 
