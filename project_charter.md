@@ -87,13 +87,20 @@ El modelo será desplegado mediante la herramienta mlflow.
 	* Microsoft:
 		* Project lead
 		
+		Marco Julio Gómez Amado
 		
 		* PM
+
+		Alejandro Sandoval Quintero
 		
 		* Data scientist(s)
 		
+		Diego Alejandro Orjuela
 		
 		* Account manager
+		
+		Marco Julio Gómez Amado
+		
 	* Client:
 		Clinicas y hospitales con servicios de endoscopía.
 	* Data administrator: 
@@ -176,11 +183,11 @@ enfermadad).
 
 Teniendo en cuenta lo anterior y para posibilitar su cargue en GoogleColab, se dividio el archivo .zip en tres archivos .zip, a saber:
 
-train.zip. Contiene las imágenes de entrenamiento separadas en las tres subcarpetas de diagnóstico, indicadas antes.
+train.zip. Contiene las imágenes de entrenamiento separadas en las cuatro subcarpetas de diagnóstico, indicadas antes.
 
-test.zip. Contiene las imágenes de test separadas en las tres subcarpetas de diagnóstico, indicadas antes.
+test.zip. Contiene las imágenes de test separadas en las cuatro subcarpetas de diagnóstico, indicadas antes.
 
-val.zip. Contiene las imágenes de validación separadas en las tres subcarpetas de diagnóstico, indicadas antes.
+val.zip. Contiene las imágenes de validación separadas en las cuatro subcarpetas de diagnóstico, indicadas antes.
 
 Estos tres archivos .zip se subieron a Google Drive para ser descargados en GoogleColab.
 
@@ -227,7 +234,8 @@ Estos tres archivos .zip se subieron a Google Drive para ser descargados en Goog
 ## Communication
 * How will we keep in touch? Weekly meetings?
 
-Se propone la realización de seguimiento diario durante las etapas de entendimiento del negocio, conocimiento de los datos y extracción de características. Durante las etapas de construcción del modelo, evaluación y despliegue, se proponen reuniones semanales.
+Siguiendo la metodolgía scrum se trabajará mediante sprint, con duración de una semana, para la cual al comienzo de cada sprint se realizara una seremonia de planning, para definir las historia de usuarios a trabajar durante el sprint. Cada dia se realizaran dailys para revisar lo realizado el dia anterior, los impedimentos y lo que se realizara en el día actual. Al final de cada sprint se realizará una seremonia de retrospectiva para discutir los logros del sprint.
+
 
 * Who are the contact persons on both sides?
 
