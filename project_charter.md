@@ -160,7 +160,7 @@ Los datos de entrada al modelo corresponden a imágenes de endoscopías gastroin
   * after some pre-aggregation on-prem,
   * Sampled data enough for modeling 
 
-El archivo zip con las imágenes se descargan de la página de Kaggle (https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download), ingresando con usuario registrado y dando click al boton "Download".
+El archivo zip con las imágenes se descargó manualmente de la página de Kaggle (https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning/versions/1?resource=download), ingresando con usuario registrado y dando click al boton "Download".
 
 El archivo zip descargado contiene tres carpetas a saber:
 
@@ -189,7 +189,16 @@ test.zip. Contiene las imágenes de test separadas en las cuatro subcarpetas de 
 
 val.zip. Contiene las imágenes de validación separadas en las cuatro subcarpetas de diagnóstico, indicadas antes.
 
-Estos tres archivos .zip se subieron a Google Drive para ser descargados en GoogleColab.
+Estos tres archivos .zip se subieron manualmente a Google Drive para ser descargados en GoogleColab. Las rutas de acceso en Google Drive son las siguientes:
+train.zip: https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link
+test.zip : https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link
+val.zip: https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link
+
+De aquí se descargan y extraen las imágenes de los archivos .zip en GoogleColab en las siguientes rutas temporales:
+train.zip: /tmp/train/
+test.zip: /tmp/test/
+val.zip: /tmp/val/
+
 
 * What tools and data storage/analytics resources will be used in the solution e.g.,
   * ASA for stream aggregation
