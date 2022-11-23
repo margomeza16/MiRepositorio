@@ -82,6 +82,8 @@ El modelo será desplegado mediante la herramienta mlflow.
 
 * How is it going to be consumed by the customer?
 
+El servicio va ser consumido por el cliente a partir de una API Web implementada con el Framework de FastAPI y desplegada en un servidor local utilizando el programa Uvicorn.
+
 ## Personnel
 * Who are on this project:
 	* Microsoft:
@@ -211,22 +213,24 @@ val.zip: /tmp/val/
   * HDI/Hive/R/Python for feature construction, aggregation and sampling
   * AzureML for modeling and web service operationalization
   * 
+  
   Las herramientas utilizadas en la solución son las siguientes:
   
-  Python. Como lenguaje de programación.
+  Se utilizó el ambiente colaborativo de Google (Google Colab) como entorno de programación utilizando como lenguaje de Python.
+  En este entorno de ejecución nos fue asignado el recurso de 12.68 GB de RAM, 78.19 GB de Disco y la GPU NVIDIA T4 con la versión del Driver 460.32.03 y CUDA 11.2 respectivamente.
   
-  Tensorflow. Como plataforma para la implementación de nuestra solución de machine learning.
+  Tensorflow: Como plataforma para la implementación de nuestra solución de machine learning.
   
-  Keras. Paquete de Tensorflow para el pre-procesamiento de las imágenes, transformaciones con data augmentation, construcción y entrenamiento del modelo de deep learning.
+  Keras: Paquete de Tensorflow para el pre-procesamiento de las imágenes, transformaciones con data augmentation, construcción y entrenamiento del modelo de deep learning.
   
-  sklearn. Para evaluar el modelo con las metricas de accuracy, precision, recall y f1-score.
+  sklearn: Para evaluar el modelo con las metricas de accuracy, precision, recall y f1-score.
   
-  numpy. Libreria utilizada para construir los arreglos de los conjuntos de imágenes para entrenamiento, test y validación.
+  numpy: Libreria utilizada para construir los arreglos de los conjuntos de imágenes para entrenamiento, test y validación.
   
-   matplotlib. Librería utilizada para la visualización de las imágenes y construcción de gráficos para visualizar el desempeño del modelo en términos de predicción, y las funciones de pérdida y accuracy.
+   matplotlib: Librería utilizada para la visualización de las imágenes y construcción de gráficos para visualizar el desempeño del modelo en términos de predicción, y las funciones de pérdida y accuracy.
    
-   mlflow. Herramienta para el versionado y despliegue del modelo.
-   
+   fastAPI: Framework en Python utilizado para el desarrollo de páginas y sitios web a partir del diseño de puntos finales (endpoints) de API. Se utilizará este framework para el despliegue de la solución.
+      
    Para el entrenamiento del modelo en GoogleColab, se utilizó un entorno de ejecución con GPU.
    
    Para el almacenamiento de las imágenes se requiere un espacio de 2 GB.
