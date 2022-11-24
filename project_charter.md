@@ -255,7 +255,7 @@ val.zip: /tmp/val/
 ## Communication
 * How will we keep in touch? Weekly meetings?
 
-Siguiendo la metodolgía scrum se trabajará mediante sprint, con duración de una semana, para la cual al comienzo de cada sprint se realizara una seremonia de planning, para definir las historia de usuarios a trabajar durante el sprint. Cada dia se realizaran dailys para revisar lo realizado el dia anterior, los impedimentos y lo que se realizara en el día actual. Al final de cada sprint se realizará una seremonia de retrospectiva para discutir los logros del sprint.
+Siguiendo la metodolgía scrum se trabajará por sprints, con duración de una semana, para lo cual, al comienzo de cada sprint se realizara una ceremonia de planning, para definir las historia de usuarios a trabajar durante el sprint. Cada dia se realizaran dailys para revisar lo realizado el dia anterior, los impedimentos y lo que se realizara en el día actual. Al final de cada sprint se realizará una ceremonia de retrospectiva para discutir los logros del sprint.
 
 
 * Who are the contact persons on both sides?
