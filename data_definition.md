@@ -24,7 +24,7 @@ train.zip: Archivo zip descargado de la página de Kaggle, desde la dirección i
 
 test.zip: Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 800 imágenes de endoscopías en formato JPG, en diferentes dimensiones en pixeles, que corresponden al conjunto de pruebas, separadas en 4 carpetas según la clase de diagnóstico del especialista, cada clase de diagnóstico contiene 200 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link.
 
-* Dataset3 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset2 Report.> 
+* Dataset3 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset3 Report.> 
 
 val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 2000 imágenes de endoscopías en formato JPG, en diferentes dimensiones en pixeles, que corresponden al conjunto de pruebas, separadas en 4 carpetas según la clase de diagnóstico del especialista, cada clase de diagnóstico contiene 500 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link.
 
