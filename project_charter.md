@@ -28,6 +28,7 @@ A esta fuente llegamos desde el sitio de Kaggle, https://www.kaggle.com/datasets
 * What data science solutions are we trying to build?
 
 Se pretende construir una solución de deep learning, aplicando las técnicas de transfer learning y fine tuning, partiendo de un modelo base de redes convolucionales pre-entrenadas. Para posteriormente evaluarlos y compararlos mediante metricas de desempeño, como las medidas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
+
 * What will we do?
 
 Se partirá de la descarga del conjunto de imágenes de endoscopias gastrointestinales, etiquetadas según su diagnóstico y clasificadas en conjuntos de entrenamiento, test y validación. Cada imágen estan etiquetada con uno de los siguientes 4 posibles hallazgos:
@@ -73,12 +74,13 @@ batch_size = 32
 
 epochs = 20
 
-Se implementará la predicción de los modelos, mediante la cual se realizará la clasificación de diagnóstico de las nuevas imagenes de endoscopias gastrointestinales.
+Para Fine Tunning se hara un precalentamiento por 2 epocas y permitimos entrenar las últimas 13 capas de la red convolucional, junto a las 4 capas de clasificación adicionadas al final.
 
+Se implementará la predicción de los modelos, mediante la cual se realizará la clasificación de diagnóstico de las nuevas imagenes de endoscopias gastrointestinales.
 
 Los modelos será evaluados mediante las metricas de accuracy, recall, precision y f1, y mediante la interpretación de las funciones de perdida y de accuracy en entrenamiento y validación, con el fin de seleccionar el modelo que mejor permita predecir el diagnóstico médico de nuevas imágenes endoscopicas gastrointestinales.
 
-El modelo será desplegado mediante la herramienta mlflow.
+
 
 * How is it going to be consumed by the customer?
 
@@ -253,7 +255,7 @@ val.zip: /tmp/val/
 ## Communication
 * How will we keep in touch? Weekly meetings?
 
-Siguiendo la metodolgía scrum se trabajará mediante sprint, con duración de una semana, para la cual al comienzo de cada sprint se realizara una seremonia de planning, para definir las historia de usuarios a trabajar durante el sprint. Cada dia se realizaran dailys para revisar lo realizado el dia anterior, los impedimentos y lo que se realizara en el día actual. Al final de cada sprint se realizará una seremonia de retrospectiva para discutir los logros del sprint.
+Siguiendo la metodolgía scrum se trabajará por sprints, con duración de una semana, para lo cual, al comienzo de cada sprint se realizara una ceremonia de planning, para definir las historia de usuarios a trabajar durante el sprint. Cada dia se realizaran dailys para revisar lo realizado el dia anterior, los impedimentos y lo que se realizara en el día actual. Al final de cada sprint se realizará una ceremonia de retrospectiva para discutir los logros del sprint.
 
 
 * Who are the contact persons on both sides?
